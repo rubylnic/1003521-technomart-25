@@ -29,8 +29,12 @@
   		    	</div>
 
   		    	<ul class="profile-navigation">
-  		    		<li><a class="btn login-signup-btn" href="#">Войти</a></li>
-  		    		<li><a class="btn login-signup-btn" href="#">Регистрация</a></li>
+  		    		<li>
+                <a class="btn login-signup-btn" href="#">Войти</a>
+              </li>
+  		    		<li>
+                <a class="btn login-signup-btn" href="#">Регистрация</a>
+              </li>
   		    	</ul>
 
   		    </div>
@@ -67,14 +71,19 @@
   			<p>Вы можете забрать товар сами, <br>
   			заехав в наш офис:</p>
   			<a href="#">
-  				<img src="img/map.jpg" width="300" height="158" alt="Адрес компании на карте"> 
+  				<img src="img/map.jpg" width="300" height="158" alt="адрес офиса компании:  г.Санкт-Петербург, ул. Б.Конюшенная, д.19/8"> 
   			</a>
   			<a class="btn" href="contact-us.html">Заблудились? Напишите нам!</a>
   		</section>
+      <section class="pop-up-map">
+        <h2 class="visually-hidden">Адрес нашего офиса</h2>
+        <img src="img/map-big.jpg" width="940" height="446" alt="адрес офиса компании:  г.Санкт-Петербург, ул. Б.Конюшенная, д.19/8">
+        <button type="button" title="Закрыть полную версию карты">x</button>
+      </section>
   	</main>
   	<footer class="main-footer">
   		<div class="navigation-and-contacts">
-  		    <a class="main-footer-logo" href="index.html">
+  		    <a class="main-footer-logo">
   				<img src="img/logo-footer.svg" width="138" height="23" alt="Логотип интернет-магазина «Техномарт»">
   		    </a>
 
@@ -104,16 +113,37 @@
   	        	<p> © 2010–2019 Компания «Техномарт» <br>
   	        	Все права защищены </p>
 
-  	        	<div class="social">
+  	        	<div class="socials">
   	        		<a class="social-btn" href="https://vk.com/htmlacademy">Vk</a>
   	        		<a class="social-btn" href="https://www.facebook.com/htmlacademy">Facebook</a>
-  	        		<a class="social-btn" href="https://www.instagram.com/htmlacademy/">Instagram</a>
+  	        		<a class="social-btn" href="https://www.instagram.com/htmlacademy">Instagram</a>
   	        	</div>
 
-  	        	<p>
+  	        	<p class="feedback">
   	        		<b>Обратная связь:</b>
   	        	    <a href="mailto:mail@htmlacademy.ru">mail@htmlacademy.ru</a>
   	            </p>
+
+                <section class="pop-up-feedback">
+                  <h2 class="visually-hidden">Отправить нам письмо</h2>
+                  <form action="#" method="post" class="feedback">
+                    <p>
+                        <label for="customer-name">Ваше имя:</label>
+                        <input type="text" name="name" id="customer-name" placeholder="Имя Фамилия">
+                    </p>
+                    <p>
+                        <label for="customer-email">Ваш e-mail</label>
+                        <input type="email" name="email" id="customer-email" placeholder="email@example.com">
+                    </p>
+                    <p>
+                        <label for="feedback-text">Текст письма:</label>
+                        <textarea name="feedback-text" id="feedback-text">В свободной форме
+                        </textarea>
+                    </p>
+                    <input type="submit" value="Отправить">
+                  </form>
+                  <button type="button" title="Закрыть форму отправки письма">x</button>
+                </section>
 
   	        	<p>
   	        	<b>Разработано- </b>
