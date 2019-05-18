@@ -65,18 +65,52 @@
 
   		<section class="filter">
         <h2 class="visually-hidden">Фильтр товаров</h2>
-  			<ul class="brand">
-  				<li>Bosch</li>
-  				<li>Интерскол</li>
-  				<li>Makita</li>
-  				<li>Dewalt</li>
-  				<li>Hitachi</li>
-  			</ul>
-  			<ul class="power-supply">
-  				<li>Аккумуляторные</li>
-  				<li>Сетевые</li>
-  			</ul>
-  		<button>Показать</button>
+  		  <form method="post" action="http://echo.htmlacademy.ru">
+           <fieldset>
+            <legend class="visually-hidden">Производители:</legend>
+            <ul class="brand">
+  			     	<li>
+                <input type="checkbox" name="Bosch" id="Bosch">
+                <label for='Bosch'>Bosch</label>
+              </li>
+
+  			    	<li>
+                <input type="checkbox" name="Interskol" id="Interskol">
+                <label for="Interskol">Интерскол</label>
+              </li>
+              
+  			    	<li>
+                <input type="checkbox" name="Makita" id="Makita">
+                <label for="Makita">Makita</label>
+              </li>
+
+  			    	<li>
+                <input type="checkbox" name="Dewalt" id="Dewalt">
+                <label for="Dewalt">Dewalt</label>
+              </li>
+
+  			    	<li>
+                <input type="checkbox" name="Hitachi" id="Hitachi">
+                <label for="Hitachi">Hitachi</label>
+              </li>
+  			   </ul>
+          </fieldset>
+          <fieldset>
+            <legend>Питание:</legend>
+  			        <ul class="power-supply">
+  				          <li>
+                      <input type="radio" name="power-supply"  value="type-1" id="type-1">
+                      <label for="type-1">  Аккумуляторные </label>
+                  </li>
+
+  				          <li>
+                      <input type="radio" name="power-supply" value="type-2" id="type-2">
+                      <label for="type-2"> Сетевые </label>
+                    </li>
+  			       </ul>
+         </fieldset>
+  		<button type="submit" title="Показать товары с учетом фильтра">Показать</button>
+    </form>
   		</section>
 
   		<section class="catalog">
