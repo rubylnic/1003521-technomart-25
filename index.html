@@ -11,7 +11,12 @@
   			<img src="img/logo-header.svg" width="109" height="19" alt="Логотип интернет-магазина «Техномарт»">
   			
   		    <ul class="user-navigation">
-  		    	<li> Поиск: </li>
+  		    	<li>
+                <form method="get" action="http://echo.htmlacademy.ru">
+                    <label class="visually-hidden" for="search"> Поиск по сайту</label>
+                    <input type="search" id="search" placeholder="Поиск по сайту">
+                </form>
+            </li>
   		    	<li><a href="bookmarks.html">Закладки</a></li>
   		    	<li><a href="cart.html">Корзина</a></li>
   		    	<li><a class="btn-order" href="order.html">Оформить заказ</a></li>
@@ -75,11 +80,7 @@
   			</a>
   			<a class="btn" href="contact-us.html">Заблудились? Напишите нам!</a>
   		</section>
-      <section class="pop-up-map">
-        <h2 class="visually-hidden">Адрес нашего офиса</h2>
-       <a href="#"> <img src="img/map-big.jpg" width="940" height="446" alt="адрес офиса компании:  г.Санкт-Петербург, ул. Б.Конюшенная, д.19/8"> </a>
-        <button type="button" title="Закрыть полную версию карты">x</button>
-      </section>
+      
   	</main>
   	<footer class="main-footer">
   		<div class="navigation-and-contacts">
@@ -153,5 +154,11 @@
   	    </div>
 
   	</footer>
+
+    <section class="map-modal">
+        <h2 class="visually-hidden">Адрес нашего офиса</h2>
+        <img src="img/map-big.jpg" width="940" height="446" alt="адрес офиса компании:  г.Санкт-Петербург, ул. Б.Конюшенная, д.19/8">
+        <button type="button" title="Закрыть полную версию карты">x</button>
+      </section>
   </body>
 </html>
