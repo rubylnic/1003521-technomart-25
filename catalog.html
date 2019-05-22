@@ -61,13 +61,25 @@
   			<li><a href="tool.html">Инструмент</a></li>
   			<li class="breadcrumbs-current"><a>Перфораторы</a></li>
   		</ul>
-  		<h2>Перфораторы</h2>
 
-  		<section class="filter">
-        <h2 class="visually-hidden">Фильтр товаров</h2>
+  		<h2>Перфораторы</h2>
+      
+  		<section class="sorting">
+          <h3>Сортировка:</h3>
+          <a href="#">По цене</a>
+          <a href="#">По типу</a>
+          <a href="#">По функционалу</a>
+      </section>
+      <section class="filter">
+        <h3>Фильтр:</h3>
+
   		  <form method="post" action="http://echo.htmlacademy.ru">
            <fieldset>
-            <legend class="visually-hidden">Производители:</legend>
+            <legend>Цена:</legend>
+            <!--Ползунок-->
+           </fieldset>
+           <fieldset>
+            <legend>Производители:</legend>
             <ul class="brand">
   			     	<li>
                 <input type="checkbox" name="Bosch" id="Bosch">
@@ -101,7 +113,7 @@
   				          <li>
                       <input type="radio" name="power-supply"  value="type-1" id="type-1">
                       <label for="type-1">  Аккумуляторные </label>
-                  </li>
+                    </li>
 
   				          <li>
                       <input type="radio" name="power-supply" value="type-2" id="type-2">
@@ -221,10 +233,29 @@
               <h3 class="title">Перфоратор BOSCH BFG 2000</h3> 
               <p class="price">12 500 р.</p> 
            </li> 
-
-           
   			</ul>
+        <ul class="catalog-page-buttons">
+          <li>
+            <a href="#" aria-label="1 страница каталога">1</a>
+          </li>
+          <li>
+            <a href="#" aria-label="2 страница каталога">2</a>
+          </li>
+          <li>
+            <a href="#" aria-label="3 страница каталога">3</a>
+          </li>
+          <li>
+            <a href="#" aria-label="4 страница каталога">Следующая</a>
+          </li>
+        </ul>
   		</section>
+      <section class="about-perforators">
+        <h2>Пара слов о перфораторах</h2>
+        <p>
+          Перфоратор — универсальный строительный инструмент. Предназначен для сверления и долбления отверстий в кирпиче, бетоне и камне. <br>
+          Существуют электромеханические и пневматические перфораторы. Современные модели могут выполнять функции дрели, шуруповерта и отбойного молотка. В ассортиментном ряду есть выбор «трехрежимников»: в одном устройстве будут совмещены отбойный молоток и ударная дрель.
+        </p>
+      </section>
       
 
   	</main>
