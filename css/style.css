@@ -185,6 +185,10 @@ li .btn-order:active{
 .developed-by a{
 	color:#ffd180; */ тут что то не то, ссылки не коричневые
 }
+.feedback b,
+.developed-by b{
+	font-weight:normal;
+}
 .copyright-social-footer{
 	background-color:#293449;
 	font-family:"Cuprum", Arial, sans-serif;
@@ -400,6 +404,7 @@ fieldset ul{
 .catalog-page-buttons a:active{
 	border-color:#ee3643;
 }
+
 .cart-adding-modal h2{
 	font-family:"Cuprum", Arial, sans-serif;
 	font-size:30px;
