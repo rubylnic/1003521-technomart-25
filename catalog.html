@@ -3,16 +3,20 @@
   <head>
     <meta charset="utf-8">
     <title>HTML Academy: Техномарт</title>
+    <link href="https://fonts.googleapis.com/css?family=PT+Sans:400,700&display=swap&subset=cyrillic-ext" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Cuprum:400,700&display=swap&subset=cyrillic-ext" rel="stylesheet">
+    <link href="css/normalize.css" rel="stylesheet">
+    <link href="css/style.css" rel="stylesheet">
   </head>
   <body>
   	<header class="main-header">
   		<nav class="main-navigation">
-  			<a class="main-header-logo" href="index.html">
+  			<a class="header-logo-link" href="index.html">
   				<img src="img/logo-header.svg" width="109" height="19" alt="Логотип интернет-магазина «Техномарт»">
   			</a>
   		    <ul class="user-navigation">
   		    	<li> 
-              <form method="get" action="http://echo.htmlacademy.ru">
+              <form class="search" method="get" action="http://echo.htmlacademy.ru">
                     <label class="visually-hidden" for="search"> Поиск по сайту</label>
                     <input type="search" id="search" placeholder="Поиск">
                 </form>
@@ -62,11 +66,11 @@
   			<li class="breadcrumbs-current"><a>Перфораторы</a></li>
   		</ul>
 
-  		<h2>Перфораторы</h2>
+  		<h2 class="catalog-title">Перфораторы</h2>
       
   		<section class="sorting">
           <h3>Сортировка:</h3>
-          <a href="#">По цене</a>
+          <a class="active-sorting" href="#">По цене</a>
           <a href="#">По типу</a>
           <a href="#">По функционалу</a>
       </section>
@@ -82,27 +86,27 @@
             <legend>Производители:</legend>
             <ul class="brand">
   			     	<li>
-                <input type="checkbox" name="Bosch" id="Bosch">
+                <input class="filter-input filter-checkbox visually-hidden" type="checkbox" name="Bosch" id="Bosch">
                 <label for='Bosch'>Bosch</label>
               </li>
 
   			    	<li>
-                <input type="checkbox" name="Interskol" id="Interskol">
+                <input class="filter-input filter-checkbox visually-hidden" type="checkbox" name="Interskol" id="Interskol">
                 <label for="Interskol">Интерскол</label>
               </li>
               
   			    	<li>
-                <input type="checkbox" name="Makita" id="Makita">
+                <input class="filter-input filter-checkbox visually-hidden" type="checkbox" name="Makita" id="Makita">
                 <label for="Makita">Makita</label>
               </li>
 
   			    	<li>
-                <input type="checkbox" name="Dewalt" id="Dewalt">
+                <input class="filter-input filter-checkbox visually-hidden" type="checkbox" name="Dewalt" id="Dewalt">
                 <label for="Dewalt">Dewalt</label>
               </li>
 
   			    	<li>
-                <input type="checkbox" name="Hitachi" id="Hitachi">
+                <input class="filter-input filter-checkbox visually-hidden" type="checkbox" name="Hitachi" id="Hitachi">
                 <label for="Hitachi">Hitachi</label>
               </li>
   			   </ul>
@@ -111,12 +115,12 @@
             <legend>Питание:</legend>
   			        <ul class="power-supply">
   				          <li>
-                      <input type="radio" name="power-supply"  value="type-1" id="type-1">
+                      <input class="filter-input filter-radio visually-hidden" type="radio" name="power-supply"  value="type-1" id="type-1">
                       <label for="type-1">  Аккумуляторные </label>
                     </li>
 
   				          <li>
-                      <input type="radio" name="power-supply" value="type-2" id="type-2">
+                      <input class="filter-input filter-radio visually-hidden" type="radio" name="power-supply" value="type-2" id="type-2">
                       <label for="type-2"> Сетевые </label>
                     </li>
   			       </ul>
@@ -236,7 +240,7 @@
   			</ul>
         <ul class="catalog-page-buttons">
           <li>
-            <a href="#" aria-label="1 страница каталога">1</a>
+            <a class="active-catalog-page" href="#" aria-label="1 страница каталога">1</a>
           </li>
           <li>
             <a href="#" aria-label="2 страница каталога">2</a>
@@ -262,7 +266,7 @@
 
   	<footer class="main-footer">
       <div class="navigation-and-contacts">
-          <a class="main-footer-logo" href="index.html">
+          <a class="footer-logo-link" href="index.html">
           <img src="img/logo-footer.svg" width="138" height="23" alt="Логотип интернет-магазина «Техномарт»">
           </a>
 
@@ -293,17 +297,17 @@
               Все права защищены </p>
 
               <div class="socials">
-                <a class="social-btn" href="https://vk.com/htmlacademy" title="Мы Вконтакте">Vk</a>
-                <a class="social-btn" href="https://www.facebook.com/htmlacademy" title="Мы в Фейсбуке">Facebook</a>
-                <a class="social-btn" href="https://www.instagram.com/htmlacademy/" title="Мы в Инстаграме">Instagram</a>
+                <a class="social-btn" href="https://vk.com/htmlacademy" aria-label="Мы Вконтакте">Vk</a>
+                <a class="social-btn" href="https://www.facebook.com/htmlacademy" aria-label="Мы в Фейсбуке">Facebook</a>
+                <a class="social-btn" href="https://www.instagram.com/htmlacademy/" aria-label="Мы в Инстаграме">Instagram</a>
               </div>
 
-              <p>
+              <p class="feedback">
                 <b>Обратная связь:</b>
                   <a href="mailto:mail@htmlacademy.ru">mail@htmlacademy.ru</a>
                 </p>
 
-              <p>
+              <p class="developed-by">
               <b>Разработано- </b>
                   <a href="https://htmlacademy.ru/intensive/htmlcss">htmlacademy.ru</a>
                 </p>
