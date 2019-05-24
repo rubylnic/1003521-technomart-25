@@ -3,16 +3,22 @@
   <head>
     <meta charset="utf-8">
     <title>HTML Academy: Техномарт</title>
+    <link href="https://fonts.googleapis.com/css?family=PT+Sans:400,700&display=swap&subset=cyrillic-ext" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Cuprum:400,700&display=swap&subset=cyrillic-ext" rel="stylesheet">
+    <link href="css/normalize.css" rel="stylesheet">
+    <link href="css/style.css" rel="stylesheet">
   </head>
   <body>
   	<header class="main-header">
   		<nav class="main-navigation">
 
-  			<img src="img/logo-header.svg" width="109" height="19" alt="Логотип интернет-магазина «Техномарт»">
+  			<a class="header-logo">
+          <img src="img/logo-header.svg" width="109" height="19" alt="Логотип интернет-магазина «Техномарт»">
+        </a>
   			
   		    <ul class="user-navigation">
   		    	<li>
-                <form method="get" action="http://echo.htmlacademy.ru">
+                <form class="search" method="get" action="http://echo.htmlacademy.ru">
                     <label class="visually-hidden" for="search"> Поиск по сайту</label>
                     <input type="search" id="search" placeholder="Поиск">
                 </form>
@@ -35,10 +41,10 @@
 
   		    	<ul class="profile-navigation">
   		    		<li>
-                <a class="btn login-signup-btn" href="#">Войти</a>
+                <a href="#">Войти</a>
               </li>
   		    		<li>
-                <a class="btn login-signup-btn" href="#">Регистрация</a>
+                <a href="#">Регистрация</a>
               </li>
   		    	</ul>
 
@@ -56,12 +62,12 @@
   		</ul>
   	</nav>
   	</header>
-  	<main class="conatiner">
+  	<main class="container">
       <section class="promo">
         <ul>
           <li class="materials">
             <h3>Материалы</h3>
-            <!-- flag new-->
+            <div class="flag flag-new">новинка</div> 
             <a href="materials.html">На любой вкус</a>
           </li>
 
@@ -93,16 +99,18 @@
             </div>
 
             <section class="catalog-slide">
-              <img src="img/slide-image-1.jpg" alt="">
+              <img src="img/slide-image-1.jpg" alt="Мужчина с дрелью" width="620" height="266">
               <h2>Дрели</h2>
               <p>Соседям на радость!</p>
-              <a href="catalog.html">Открыть каталог</a>
+              <a class="btn" href="catalog.html">Открыть каталог</a>
             </section>
              <section class="catalog-slide">
-              <img src="img/slide-image-2.jpg" alt="">
+              <img src="img/slide-image-2.jpg" alt="Мужчина с перфоратором" width="620" height="266">
               <h2>Перфораторы</h2>
               <p>Настоящие мужские игрушки</p>
-              <a href="catalog.html">Открыть каталог</a>
+              <a class="btn" href="catalog.html">Открыть каталог</a>
+              <button class="dot-button">Данный слайд</button>
+              <button class="dot-button">Следующий слайд</button>
              </section>
           </li>
         </ul>
@@ -110,7 +118,7 @@
       <section>
         <div class="article-header">
             <h2>Популярные товары</h2>
-            <a href="#">Все популярные товары</a>
+            <a class="btn" href="#">Все популярные товары</a>
         </div>
          <ul class="catalog-list">
            <li class="catalog-item"> 
@@ -175,39 +183,39 @@
       <section class="popular-brands">
         <div class="article-header">  
             <h2>Популярные производители</h2>
-            <a href="#">Все производители</a>
+            <a class="btn" href="#">Все производители</a>
         </div>
         <ul>
           <li class="brand">
-            <a href="#"><img src="img/brand-1.png" alt="Bosch"></a>
+            <a href="#"><img src="img/brand-1.png" alt="Bosch" width="126" height="37"></a>
           </li>
 
            <li class="brand">
-            <a href="#"><img src="img/brand-2.png" alt="Makita"></a>
+            <a href="#"><img src="img/brand-2.png" alt="Makita" width="123" height="40"></a>
           </li>
 
           <li class="brand">
-            <a href="#"><img src="img/brand-3.png" alt="DeWalt"></a>
+            <a href="#"><img src="img/brand-3.png" alt="DeWalt" width="146" height="44"></a>
           </li>
 
           <li class="brand">
-            <a href="#"><img src="img/brand-4.png" alt="Интерскол"></a>
+            <a href="#"><img src="img/brand-4.png" alt="Интерскол" width="200" height="88"></a>
           </li>
 
           <li class="brand">
-            <a href="#"><img src="img/brand-5.png" alt="Hitachi"></a>
+            <a href="#"><img src="img/brand-5.png" alt="Hitachi" width="169" height="31"></a>
           </li>
 
           <li class="brand">
-            <a href="#"><img src="img/brand-6.png" alt="LG"></a>
+            <a href="#"><img src="img/brand-6.png" alt="LG" width="121" height="73"></a>
           </li>
 
           <li class="brand">
-            <a href="#"><img src="img/brand-7.png" alt="AEG"></a>
+            <a href="#"><img src="img/brand-7.png" alt="AEG" width="151" height="96"></a>
           </li>
 
           <li class="brand">
-            <a href="#"><img src="img/brand-8.png" alt="metabo"></a>
+            <a href="#"><img src="img/brand-8.png" alt="metabo" width="204" height="69"></a>
           </li>
         </ul>
       </section>
@@ -218,9 +226,9 @@
         Мы стараемся изо всех сил, чтобы сделать ваши покупки приятными.</p>
         <div class="services-slider">
             <ul>
-              <li>Доставка</li>
-              <li>Гарантия</li>
-              <li>Кредит</li>
+              <li><button>Доставка</button></li>
+              <li><button>Гарантия</button></li>
+              <li><button>Кредит</button></li>
            </ul>
            <div class="slide-delivery">
              <h3>Доставка</h3>
@@ -265,7 +273,7 @@
   	</main>
   	<footer class="main-footer">
   		<div class="navigation-and-contacts">
-  		    <a class="main-footer-logo">
+  		    <a class="footer-logo">
   				<img src="img/logo-footer.svg" width="138" height="23" alt="Логотип интернет-магазина «Техномарт»">
   		    </a>
 
@@ -305,8 +313,8 @@
   	        		<b>Обратная связь:</b>
   	        	    <a href="mailto:mail@htmlacademy.ru">mail@htmlacademy.ru</a>
   	            </p>
-  	        	<p>
-  	        	<b>Разработано- </b>
+  	        	<p class="developed-by">
+  	        	<b>Разработано —</b>
   	        	    <a href="https://htmlacademy.ru/intensive/htmlcss">htmlacademy.ru</a>
   	            </p>
   	        </div>
@@ -326,10 +334,10 @@
                     </p>
                     <p>
                         <label for="feedback-text">Текст письма:</label>
-                        <textarea name="feedback-text" id="feedback-text">В свободной форме
+                        <textarea name="feedback-text" id="feedback-text" placeholder="В свободной форме">
                         </textarea>
                     </p>
-                    <input type="submit" value="Отправить">
+                    <input id="btn" type="submit" value="Отправить">
                   </form>
                   <button type="button" title="Закрыть форму отправки письма">x</button>
                 </section>
