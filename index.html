@@ -314,8 +314,10 @@
         </div>
     </footer>
     <section class="pop-up-feedback">
+        <button class="modal-close" type="button"></button>
         <h2 class="visually-hidden">Отправить нам письмо</h2>
         <form action="https://echo.htmlacademy.ru" method="post" class="feedback">
+            <div class="feedback-user-info">
             <p>
                 <label for="customer-name">Ваше имя:</label>
                 <input type="text" name="name" id="customer-name" placeholder="Имя Фамилия">
@@ -324,19 +326,18 @@
                 <label for="customer-email">Ваш e-mail</label>
                 <input type="email" name="email" id="customer-email" placeholder="email@example.com">
             </p>
-            <p>
+        </div>
+            <p class="feedback-text">
                 <label for="feedback-text">Текст письма:</label>
-                <textarea name="feedback-text" id="feedback-text" placeholder="В свободной форме">
-                        </textarea>
+                <textarea name="feedback-text" id="feedback-text" placeholder="В свободной форме"></textarea>
             </p>
-            <input class="btn" type="submit" value="Отправить">
+           <div class="lower-popup"> <input class="btn" type="submit" value="Отправить"> </div>
         </form>
-        <button type="button" title="Закрыть форму отправки письма">x</button>
     </section>
     <section class="map-modal">
         <h2 class="visually-hidden">Адрес нашего офиса</h2>
-        <img src="img/map-big.jpg" width="940" height="446" alt="адрес офиса компании:  г.Санкт-Петербург, ул. Б.Конюшенная, д.19/8">
-        <button type="button" title="Закрыть полную версию карты">x</button>
+        <button class="modal-close"></button>
+        <img src="img/map-big.jpg" width="940" height="440" alt="адрес офиса компании:  г.Санкт-Петербург, ул. Б.Конюшенная, д.19/8">
     </section>
 </body>
 
