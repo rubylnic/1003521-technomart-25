@@ -970,7 +970,7 @@ input[type="radio"].visually-hidden {
 
     text-indent: -1000px;
     overflow: hidden;
-    z-index: 20;
+    z-index: 13;
 }
 
 .catalog-item .flag-new {
@@ -1303,7 +1303,7 @@ input[type="radio"].visually-hidden {
     left: 50%;
     margin-left: -310px;
     background-color: #ffffff;
-    z-index: 5;
+    z-index: 20;
     box-shadow: 0 20px 40px rgba(0, 0, 0, 0.75);
 }
 
@@ -1382,7 +1382,7 @@ input[type="radio"].visually-hidden {
 
 /*pop-up-feedback*/
 .pop-up-feedback {
-    display:none;
+    
     position: fixed;
     top: 100px;
     left: 50%;
@@ -1392,6 +1392,7 @@ input[type="radio"].visually-hidden {
     background-color: #ffffff;
     border-top: solid 7px #ff5357;
     box-shadow:0 20px 40px rgba(0,0,0,0.4);
+    z-index:20;
 }
 
 .pop-up-feedback form {
@@ -1538,6 +1539,7 @@ input[type="radio"].visually-hidden {
     margin-left:-470px;
     box-shadow:0 8px 16px rgba(0,0,0,0.5);
     background-color:red;
+    z-index:20;
 }
 .map-modal .modal-close {
     font-size: 0;
