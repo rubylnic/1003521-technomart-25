@@ -1382,7 +1382,7 @@ input[type="radio"].visually-hidden {
 
 /*pop-up-feedback*/
 .pop-up-feedback {
-    
+    display:none;
     position: fixed;
     top: 100px;
     left: 50%;
