@@ -24,7 +24,7 @@
                             <input type="search" id="search" placeholder="Поиск:">
                         </form>
                     </li>
-                    <li><a class="bookmarks" href="bookmarks.html">Закладки: 0</a></li>
+                    <li><a class="bookmarks bookmarks-active" href="bookmarks.html">Закладки: 1</a></li>
                     <li><a class="cart cart-active" href="cart.html">Корзина: 10</a></li>
                     <li><a class="btn-order" href="order.html">Оформить заказ</a></li>
                 </ul>
@@ -41,7 +41,10 @@
                     <span class="address">г. Санкт-Петербург, ул. Б. Конюшенная, д. 19/8</span>
                 </div>
                 <div class="profile-navigation-signed-in">
-                    <a class="username" href="#">Равшан Джамшутович</a>
+                   <div class="username-container">
+                    <a class="username" href="profile.html">Равшан Джамшутович</a>
+                </div>
+                    <a class="logout" href="logout.html"><span class="visually-hidden">Выйти</span></a>
                     <ul class="profile-nav">
                         <li><a href="my-orders.html">Мои заказы</a></li>
                         <li><a href="my-profile.html">Личный кабинет</a></li>
@@ -80,38 +83,61 @@
                     <fieldset>
                         <legend>Производители:</legend>
                         <ul class="brand">
-                            <li>
-                                <input class="filter-input filter-checkbox visually-hidden" type="checkbox" name="Bosch" id="Bosch">
-                                <label for='Bosch'>Bosch</label>
+                            <li class="filter-checkbox">
+                               
+                               <label for='Bosch'>
+                                <input class="filter-input visually-hidden" type="checkbox" name="Bosch" id="Bosch">
+                                <span class="checkbox-indicator"></span>
+                                Bosch
+                            </label>
                             </li>
-                            <li>
-                                <input class="filter-input filter-checkbox visually-hidden" type="checkbox" name="Interskol" id="Interskol">
-                                <label for="Interskol">Интерскол</label>
+                            <li class="filter-checkbox">
+                                
+                                <label for="Interskol">
+                                    <input class="filter-input visually-hidden" type="checkbox" name="Interskol" id="Interskol">
+                                <span class="checkbox-indicator"></span>
+                                Интерскол
+                            </label>
                             </li>
-                            <li>
-                                <input class="filter-input filter-checkbox visually-hidden" type="checkbox" name="Makita" id="Makita">
-                                <label for="Makita">Makita</label>
+                            <label for="Makita">
+                            <li class="filter-checkbox">
+                                <input class="filter-input visually-hidden" type="checkbox" name="Makita" id="Makita">
+                               <span class="checkbox-indicator"></span>
+                                Makita
+                            </label>
                             </li>
-                            <li>
-                                <input class="filter-input filter-checkbox visually-hidden" type="checkbox" name="Dewalt" id="Dewalt">
-                                <label for="Dewalt">Dewalt</label>
+                            <li class="filter-checkbox">
+                               <label for="Dewalt">
+                                <input class="filter-input visually-hidden" type="checkbox" name="Dewalt" id="Dewalt">
+                                <span class="checkbox-indicator"></span>
+                                Dewalt
+                            </label>
                             </li>
-                            <li>
+                            <li class="filter-checkbox">
+                                <label for="Hitachi">
                                 <input class="filter-input filter-checkbox visually-hidden" type="checkbox" name="Hitachi" id="Hitachi">
-                                <label for="Hitachi">Hitachi</label>
+                                <span class="checkbox-indicator"></span>
+                                Hitachi
+                            </label>
                             </li>
                         </ul>
                     </fieldset>
                     <fieldset>
                         <legend>Питание:</legend>
                         <ul class="power-supply">
-                            <li>
-                                <input class="filter-input filter-radio visually-hidden" type="radio" name="power-supply" value="type-1" id="type-1">
-                                <label for="type-1"> Аккумуляторные </label>
+                            <li class="filter-radio">
+                                <label for="type-1">
+                                <input class="filter-input  visually-hidden" type="radio" name="power-supply" value="type-1" id="type-1">
+                                <span class="radio-indicator"></span>
+                                 Аккумуляторные
+                                </label>
                             </li>
-                            <li>
-                                <input class="filter-input filter-radio visually-hidden" type="radio" name="power-supply" value="type-2" id="type-2">
-                                <label for="type-2"> Сетевые </label>
+                            <li class="filter-radio">
+                               <label for="type-2">
+                               <input class="filter-input visually-hidden" type="radio" name="power-supply" value="type-2" id="type-2">
+                                <span class="radio-indicator"></span>
+                                 Сетевые 
+                             </label>
                             </li>
                         </ul>
                     </fieldset>
