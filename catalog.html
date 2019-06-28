@@ -77,8 +77,12 @@
                 <form method="post" action="http://echo.htmlacademy.ru">
                     <fieldset>
                         <legend>Цена:</legend>
-                        <div class="price"></div>
-                        <!--Ползунок-->
+                        <div class="price-range">
+                            <div class="range"></div>
+                            <p class="range-output range-left">0</p>
+                            <p class="range-output range-right">30000</p>
+                        </div>
+                        
                     </fieldset>
                     <fieldset>
                         <legend>Производители:</legend>
@@ -86,7 +90,7 @@
                             <li class="filter-checkbox">
                                
                                <label for='Bosch'>
-                                <input class="filter-input visually-hidden" type="checkbox" name="Bosch" id="Bosch">
+                                <input class="filter-input visually-hidden" type="checkbox" name="Bosch" id="Bosch" checked>
                                 <span class="checkbox-indicator"></span>
                                 Bosch
                             </label>
@@ -102,7 +106,7 @@
                             
                             <li class="filter-checkbox">
                                 <label for="Makita">
-                                <input class="filter-input visually-hidden" type="checkbox" name="Makita" id="Makita">
+                                <input class="filter-input visually-hidden" type="checkbox" name="Makita" id="Makita" checked>
                                <span class="checkbox-indicator"></span>
                                 Makita
                             </label>
@@ -128,7 +132,7 @@
                         <ul class="power-supply-filter">
                             <li class="filter-radio">
                                 <label for="type-1">
-                                <input class="filter-input  visually-hidden" type="radio" name="power-supply" value="type-1" id="type-1">
+                                <input class="filter-input  visually-hidden" type="radio" name="power-supply" value="type-1" id="type-1" checked>
                                 <span class="radio-indicator"></span>
                                  Аккумуляторные
                                 </label>
@@ -152,8 +156,9 @@
                         <li><a class="active-sorting" href="#">По цене</a></li>
                         <li><a href="#">По типу</a></li>
                         <li><a href="#">По функционалу</a></li>
-                        <li><a class="button-up"></a></li>
-                       <li> <a class="button-down"></a></li>
+                    </ul>
+                        <a class="button-up-active"></a>
+                        <a class="button-down"></a>
                     </ul>
                 </section>
                 <section class="catalog">
@@ -354,6 +359,7 @@
             
         </div>
     </section>
+    <script src="js/script.js"></script>
 </body>
 
 </html>
